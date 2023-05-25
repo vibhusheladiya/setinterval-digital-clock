@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+	"width=device-width, initial-scale=1.0">
+	<title>Digital Clock</title>
+	<link rel="stylesheet" href="digital_clock_setinterval_date_object.css">
+</head>
+<body>
+
+    
+	 <div id="clock">8:10:45</div> 
+
+	<script>
+        // let date = new Date();
+// let one= date.toLocaleString()
+// let two = date.toLocaleDateString()
+// let three = date.toLocaleTimeString()
+// console.log(one)
+
+const sc = ()=> {
+    let date = new Date();
+    let three = date.toLocaleString();
+    document.getElementById('clock').innerHTML= three;
+}
+setInterval(sc,1000)
+
+
+    </script> 
+</body>
+</html>
